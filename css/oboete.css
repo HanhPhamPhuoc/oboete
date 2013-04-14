@@ -1,0 +1,25 @@
+#lessonnumberinput {
+	width: 20px;
+}
+
+
+#newkanji, p, h3, form { 
+	font-family:"Helvetica";
+	text-align:center;
+	font-weight:lighter;
+}
+
+td {
+	padding:15px;
+}
+
+div {
+	text-align:center;
+}
+
+.right-answer {
+	color:green;
+}
+.wrong-answer {
+	color:red;
+}

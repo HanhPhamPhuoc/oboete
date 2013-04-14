@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<header>
+		<meta http-equiv="Content-Type" 
+		content="text/html; charset=UTF-8">
+		<link rel="stylesheet" type="text/css"  href="css/oboete.css">
+		<link rel="stylesheet" type="text/css"  href="css/jquery-ui.css">
+	</header>
+	<body>
+
+	<div id="mainpage" >
+		<form>
+			Study kanji from lessons up till: <input id="lessonnumberinput" type="text" name="lessonnumber" value=30><input id="lessonsubmit" type="submit" value="Go!"><br>
+			Press the right arrow for the next flashcard!<br>
+		</form>
+		<div id="radio">
+			<input type="radio" name="radio" id="texttokanji" checked="checked"><label for="texttokanji">Text to Kanji</label>
+			<input type="radio" name="radio" id="kanjitotext"><label for="kanjitotext">Kanji to Text</label>
+		</div>
+		<h5>
+			<article id="newkanji"></article>
+		</h5>
+	</div>
+
+<table align="center">
+	<tr>
+		<td>
+		<div class="answers" id="choice1">
+			<h3><p id="meaning1"></p></h3>
+			<div id="kanji1"></div>
+		</div>
+		</td>
+
+		<td>
+		<div class="answers" id="choice2">
+			<h3><p id="meaning2"></p></h3>
+			<div id="kanji2"></div>
+		</div>
+		</td>
+
+		<td>
+		<div class="answers" id="choice3">
+			<h3><p id="meaning3"></p></h3>
+			<div id="kanji3"></div>
+		</div>
+		</td>
+
+		<td>
+		<div class="answers" id="choice4">
+			<h3><p id="meaning4"></p></h3>
+			<div id="kanji4"></div>
+		</div>
+		</td>
+	</tr>
+</table>
+<div id="test"></div>
+</body>
+	<footer>
+		<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+		<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+		<script src="data/kanji.json"></script>
+		<script src="js/kanjify.js"></script>
+	</footer>
+</html>
